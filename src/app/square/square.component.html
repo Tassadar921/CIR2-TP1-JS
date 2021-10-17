@@ -1,0 +1,9 @@
+<div style="width: 30%; margin-left:1%">
+  <ion-title style="text-align:center;">Mise au carré :</ion-title>
+  <p style="text-align:center;">Type here a value and then submit</p>
+  <ion-item>
+    <ion-input type="number" [(ngModel)]="var1" class="input"></ion-input>²
+    <ion-button (click)="square(var1)">Submit</ion-button>
+  </ion-item>
+  <p>{{var1*var1}}</p>
+</div>

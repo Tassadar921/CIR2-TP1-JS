@@ -1,0 +1,10 @@
+<div style="width: 30%; margin-left:1%">
+  <ion-title style="text-align:center;">Division :</ion-title>
+  <p style="text-align:center;">Type here 2 values and then submit</p>
+  <ion-item>
+    <ion-input type="number" [(ngModel)]="var1" class="input"></ion-input>/
+    <ion-input type="number" [(ngModel)]="var2" class="input"></ion-input>
+    <ion-button (click)="div(var1,var2)">Submit</ion-button>
+  </ion-item>
+  <p>{{var1/var2}}</p>
+</div>

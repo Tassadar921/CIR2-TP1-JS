@@ -1,0 +1,11 @@
+<div style="width: 30%; margin-left:1%">
+  <ion-title style="text-align:center;">Soustraction :</ion-title>
+  <p style="text-align:center;">Type here 2 values and then submit</p>
+  <ion-item>
+    <ion-input type="number" [(ngModel)]="var1" class="input"></ion-input>
+    <ion-icon name="remove-outline"></ion-icon>
+    <ion-input type="number" [(ngModel)]="var2" class="input"></ion-input>
+    <ion-button (click)="minus(var1,var2)">Submit</ion-button>
+  </ion-item>
+  <p>{{var1-var2}}</p>
+</div>

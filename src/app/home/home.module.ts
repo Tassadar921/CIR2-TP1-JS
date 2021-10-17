@@ -4,6 +4,13 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
+import {AdditionComponent} from '../addition/addition.component';
+import {SoustractionComponent} from '../soustraction/soustraction.component';
+import {MultiplicationComponent} from '../multiplication/multiplication.component';
+import {DivisionComponent} from '../division/division.component';
+import {SquareComponent} from '../square/square.component';
+import {ArrayComponent} from '../array/array.component';
+
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -14,6 +21,6 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, AdditionComponent, SoustractionComponent, MultiplicationComponent, DivisionComponent, SquareComponent, ArrayComponent]
 })
 export class HomePageModule {}
