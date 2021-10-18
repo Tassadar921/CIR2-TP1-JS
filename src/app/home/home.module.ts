@@ -11,6 +11,9 @@ import {DivisionComponent} from '../division/division.component';
 import {SquareComponent} from '../square/square.component';
 import {ArrayComponent} from '../array/array.component';
 import {FactsComponent} from '../facts/facts.component';
+import {SimBDEComponent} from '../sim-bde/sim-bde.component';
+import {HistoComponent} from '../histo/histo.component';
+
 
 import { HomePageRoutingModule } from './home-routing.module';
 
@@ -31,7 +34,9 @@ import { HomePageRoutingModule } from './home-routing.module';
       DivisionComponent,
       SquareComponent,
       ArrayComponent,
-      FactsComponent
+      FactsComponent,
+      SimBDEComponent,
+      HistoComponent
     ]
 })
 export class HomePageModule {}
