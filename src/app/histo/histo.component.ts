@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoComponent implements OnInit {
 
-  public myArray = [4,1,8,3,10,6,7,2,9,10,15];
+  public myArray = [4,1,8,3,10,6,7,2,9,10,15,-16];
   public array = [4.5,1,-8,3,10,6,7,2,9,0];
   public myTest=[40,10,80,100,6,-70,2,9];
   public tab = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
@@ -21,7 +21,8 @@ export class HistoComponent implements OnInit {
     console.log('Component histo chargé');
   }
 
-  histo(array){
+  histo(array)
+  {
     if(!Array.isArray(array)) {return 'Erreur, ce n\'est pas un tableau.';}
     if(array.every(element => isNaN(element))) {return 'Erreur, le tableau ne contient pas que des nombres.';}
 
@@ -37,7 +38,6 @@ export class HistoComponent implements OnInit {
       (tabSize=21) ? (zero = 10) : (zero = tabSize + min)  //niveau de laxe des abscise dans le tableau
     }
     if(max <= 0) {zero = 0;}
-
 
     const histogramme = new Array(tabSize);
 
