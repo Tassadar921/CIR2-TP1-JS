@@ -20,9 +20,6 @@ export class MultiplicationComponent implements OnInit
     console.log('Component multiplication chargé');
   }
 
-  mul(var1:number, var2:number)
-  {
-    console.log('blabla');
-  }
+  mul = (var1:number, var2:number) => {console.log(var1*var2);}
 
 }

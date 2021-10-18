@@ -20,8 +20,5 @@ export class AdditionComponent implements OnInit
     console.log('Component addition chargé');
   }
 
-  add(var1:number, var2:number)
-  {
-    console.log('blabla');
-  }
+  add = (var1:number, var2:number) => {console.log(var1+var2);}
 }

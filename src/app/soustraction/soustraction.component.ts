@@ -20,9 +20,6 @@ export class SoustractionComponent implements OnInit
     console.log('Component soustraction chargé');
   }
 
-  minus(var1:number, var2:number)
-  {
-    console.log('blabla');
-  }
+  minus = (var1:number, var2:number) => {console.log(var1-var2);}
 
 }

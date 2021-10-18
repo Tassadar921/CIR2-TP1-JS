@@ -20,9 +20,13 @@ export class DivisionComponent implements OnInit
     console.log('Component division chargé');
   }
 
-  div(var1:number, var2:number)
-  {
-    //gérer le cas de la div par 0
-    console.log('blabla');
+  div=(var1:number, var2:number)=>{
+  try{
+    if(var2==0)
+      throw 'Division par 0';
+    console.log(var1/var2);
+  }catch(error){
+    console.log(error)
   }
+}
 }

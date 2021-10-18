@@ -16,7 +16,7 @@ export class ArrayComponent implements OnInit
 
   constructor()
   {
-    this.myArray = [157,10,81,1000,4,1024,16,492,9,287,0];
+    this.myArray = [157,-10,81,1000,4,1024,16,492,9,287,0];
     this.nbrLn = 0;
   }
 

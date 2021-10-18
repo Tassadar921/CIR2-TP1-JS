@@ -10,6 +10,7 @@ import {MultiplicationComponent} from '../multiplication/multiplication.componen
 import {DivisionComponent} from '../division/division.component';
 import {SquareComponent} from '../square/square.component';
 import {ArrayComponent} from '../array/array.component';
+import {FactsComponent} from '../facts/facts.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
@@ -21,6 +22,16 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, AdditionComponent, SoustractionComponent, MultiplicationComponent, DivisionComponent, SquareComponent, ArrayComponent]
+  declarations:
+    [
+      HomePage,
+      AdditionComponent,
+      SoustractionComponent,
+      MultiplicationComponent,
+      DivisionComponent,
+      SquareComponent,
+      ArrayComponent,
+      FactsComponent
+    ]
 })
 export class HomePageModule {}

@@ -19,8 +19,5 @@ export class SquareComponent implements OnInit
     console.log('Component square chargé');
   }
 
-  square(var1:number)
-  {
-    console.log('blabla');
-  }
+  square = (var1:number) => {console.log(Math.pow(var1,2));}
 }
