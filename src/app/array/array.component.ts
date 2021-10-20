@@ -8,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ArrayComponent implements OnInit
 {
   public myArray;
-  public pairs;
+  public impairs;
   public sinArray;
   public lnArray;
-  public ln;
   public nbrLn;
 
   constructor()
@@ -29,8 +28,8 @@ export class ArrayComponent implements OnInit
   {
     console.log('myArray : ' + this.myArray);
 
-    this.pairs = this.myArray.filter(value => 0 == value%2); //pairs contient les nombres pairs de myArray
-    console.log('Pairs : ' + this.pairs);
+    this.impairs = this.myArray.filter(value => 1 == value%2); //pairs contient les nombres pairs de myArray
+    console.log('Impairs : ' + this.impairs);
 
     this.sinArray = this.myArray.map(value => Math.sin(value)); //sinArray contient les sinus des nombres de myArray
     console.log('sinArray : ' + this.sinArray);
