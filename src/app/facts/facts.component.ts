@@ -39,7 +39,7 @@ export class FactsComponent implements OnInit
 
   facts()
   {
-    console.log(this.phrase.replace('Chuck Norris', 'King Kong'));
+    console.log(this.phrase.replaceAll('Chuck Norris', 'Valentin Béquart'));
     this.words = this.phrase.split(' ');
     let count=0;
     for(let i = 0; i<this.words.length; i++)
